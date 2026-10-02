@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HIVE Global Advisory — Contact us</title>
+<meta name="description" content="Our team is available for an initial assessment of your needs. Fill in the form or contact us directly at one of our offices.">
+<link rel="alternate" hreflang="en" href="https://www.hiveglobaladvisory.example/en/contact-us.html">
+<link rel="alternate" hreflang="it" href="https://www.hiveglobaladvisory.example/it/contact-us.html">
+<link rel="alternate" hreflang="x-default" href="https://www.hiveglobaladvisory.example/en/contact-us.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+.offices-4{ display:grid; grid-template-columns:repeat(auto-fit, minmax(210px,1fr)); gap:1px; background:var(--parchment-line); border:1px solid var(--parchment-line); margin-top:20px; }
+.checkline{ display:flex; align-items:flex-start; gap:10px; font-size:.85rem; color:var(--slate); }
+.checkline input{ width:auto; margin-top:3px; }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap bar">
+    <a href="index.html" class="mark">
+      <img src="../assets/logo-mark.svg" alt="HIVE Global Advisory" width="36" height="36">
+      <span class="wordmark"><b>HIVE</b><span>GLOBAL ADVISORY</span></span>
+    </a>
+    <input type="checkbox" id="nav-toggle">
+    <label for="nav-toggle" class="nav-btn">Menu</label>
+    <nav class="primary">
+      <a href="index.html">Home</a>
+      <a href="about-us.html">About us</a>
+      <a href="global-presence.html">Global presence</a>
+      <a href="services.html">Services</a>
+      <a href="contact-us.html" aria-current="page">Contact us</a>
+      <a href="faq.html">FAQ</a>
+      <a href="privacy.html">Privacy</a>
+      <details class="lang-switch">
+        <summary>EN <span class="chev">▾</span></summary>
+        <div class="lang-menu">
+          <a href="../en/contact-us.html" aria-current="true">English</a>
+          <a href="../it/contact-us.html">Italiano</a>
+          <a class="soon" href="#" aria-disabled="true">Deutsch <span class="tag">soon</span></a>
+          <a class="soon" href="#" aria-disabled="true">Français <span class="tag">soon</span></a>
+          <a class="soon" href="#" aria-disabled="true">Español <span class="tag">soon</span></a>
+          <a class="soon" href="#" aria-disabled="true">العربية <span class="tag">soon</span></a>
+          <a class="soon" href="#" aria-disabled="true">Русский <span class="tag">soon</span></a>
+        </div>
+      </details>
+      <a href="contact-us.html" class="btn btn-solid">Request a consultation</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero on-ink motif">
+  <svg class="bg" width="100%" height="100%" aria-hidden="true"><defs><pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse"><path d="M 64 0 L 0 0 0 64" fill="none" stroke="#B98A3E" stroke-width="0.5"/></pattern></defs><rect width="100%" height="100%" fill="url(#grid)"/></svg>
+  <div class="wrap">
+    <span class="eyebrow">Contact us</span>
+    <h1 style="max-width:20ch;">Let&rsquo;s talk about your project</h1>
+    <p class="lede lede-sm">Our team is available for an initial assessment of your needs. Fill in the form or contact us directly at one of our offices.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <!--
+      Static site: this form does not send data until connected to a
+      service (Netlify Forms, Formspree, your own backend...).
+      See the project README.
+    -->
+    <form class="contact" action="#" method="POST">
+      <div>
+        <label for="nome">First name</label>
+        <input type="text" id="nome" name="first_name" required>
+      </div>
+      <div>
+        <label for="cognome">Last name</label>
+        <input type="text" id="cognome" name="last_name" required>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="telefono">Phone</label>
+        <input type="tel" id="telefono" name="phone">
+      </div>
+      <div>
+        <label for="paese">Country</label>
+        <input type="text" id="paese" name="country">
+      </div>
+      <div>
+        <label for="area">Area of interest</label>
+        <select id="area" name="area">
+          <option value="">Select an area</option>
+          <option>Corporate &amp; commercial law</option>
+          <option>International taxation</option>
+          <option>Wealth management</option>
+          <option>M&amp;A &amp; due diligence</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="full">
+        <label for="messaggio">Message</label>
+        <textarea id="messaggio" name="message" required></textarea>
+      </div>
+      <div class="full checkline">
+        <input type="checkbox" id="privacy" name="privacy" required>
+        <label for="privacy" style="text-transform:none; font-family:var(--font-body); letter-spacing:normal; margin:0;">I have read the <a href="privacy.html" style="color:var(--ink); text-decoration:underline;">privacy notice</a> and consent to my data being processed so I can be contacted back.</label>
+      </div>
+      <div class="full">
+        <button type="submit" class="btn btn-solid">Send request</button>
+        <p class="form-note">We reply within 1-2 business days. Please do not include sensitive data in this form.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Our offices</span>
+      <h2>Where to find us</h2>
+    </div>
+    <div class="offices-4">
+      <div class="office-card">
+        <div class="city">Shanghai</div>
+        <p>[Address], Shanghai, China</p>
+        <p>+86 21 0000 0000</p>
+        <p>shanghai@hiveglobaladvisory.example</p>
+      </div>
+      <div class="office-card">
+        <div class="city">Ho Chi Minh City</div>
+        <p>[Address], Ho Chi Minh City, Vietnam</p>
+        <p>+84 28 0000 0000</p>
+        <p>hcmc@hiveglobaladvisory.example</p>
+      </div>
+      <div class="office-card">
+        <div class="city">Mumbai</div>
+        <p>[Address], Mumbai, India</p>
+        <p>+91 22 0000 0000</p>
+        <p>mumbai@hiveglobaladvisory.example</p>
+      </div>
+      <div class="office-card">
+        <div class="city">Dubai</div>
+        <p>[Address], Dubai, United Arab Emirates</p>
+        <p>+971 4 000 0000</p>
+        <p>dubai@hiveglobaladvisory.example</p>
+      </div>
+      <div class="office-card">
+        <div class="city">Milan</div>
+        <p>Via [Address], 20100 Milan, Italy</p>
+        <p>+39 02 0000 0000</p>
+        <p>milan@hiveglobaladvisory.example</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <h4>Offices</h4>
+        <div class="office"><span class="city">Shanghai</span><br>[Address], Shanghai, China<br>+86 21 0000 0000</div>
+        <div class="office"><span class="city">Ho Chi Minh City</span><br>[Address], Ho Chi Minh City, Vietnam<br>+84 28 0000 0000</div>
+        <div class="office"><span class="city">Mumbai</span><br>[Address], Mumbai, India<br>+91 22 0000 0000</div>
+        <div class="office"><span class="city">Dubai</span><br>[Address], Dubai, United Arab Emirates<br>+971 4 000 0000</div>
+        <div class="office"><span class="city">Milan</span><br>Via [Address], 20100 Milan, Italy<br>+39 02 0000 0000</div>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#corporate">Corporate &amp; commercial law</a></li>
+          <li><a href="services.html#tax">International taxation</a></li>
+          <li><a href="services.html#wealth">Wealth management</a></li>
+          <li><a href="services.html#ma">M&amp;A &amp; due diligence</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about-us.html">About us</a></li>
+          <li><a href="contact-us.html">Contact us</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>&copy; <span id="year">2026</span> HIVE Global Advisory. All rights reserved.</span>
+      <span>Shanghai · Ho Chi Minh City · Mumbai · Dubai · Milan</span>
+    </div>
+  </div>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>
